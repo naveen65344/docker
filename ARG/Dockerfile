@@ -1,4 +1,5 @@
 FROM almalinux
 ARG name="naveen" \
     course="aws"  \
-RUN  echo "$course"    
+RUN  echo "$name" \
+RUN  echo "hi" 
