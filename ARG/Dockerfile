@@ -1,5 +1,7 @@
-FROM almalinux
-ARG name="naveen" \
-    course="aws"  \
-RUN  echo "$name" \
-RUN  echo "hi" 
+ARG version
+FROM almalinux:${version:-9}
+ARG course="DevOps with AWS" \
+    duration="120hrs"
+ENV duration=$duration
+RUN echo "Course: $course, duration: $duration, version: $version"
+CMD ["sleep","100"]
