@@ -1,4 +1,4 @@
 FROM almalinux
 ARG name="naveen" \
-    course="aws"
+    course="aws"  \
 RUN "$course"    
