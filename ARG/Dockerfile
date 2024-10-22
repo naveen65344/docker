@@ -1,3 +1,3 @@
 FROM almalinux
-ARG name="naveen" /
+ARG name="naveen" \
     course="aws"
